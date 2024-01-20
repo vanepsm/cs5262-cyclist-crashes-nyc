@@ -45,7 +45,7 @@ This cost breakdown is meant for policymakers in city and state governments in a
 
 The average cost of motor-vehicle injuries and fatalities varies based on the severity of the injury and whether the outcome is fatal or non-fatal. According to the [National Safety Council](https://injuryfacts.nsc.org/all-injuries/costs/guide-to-calculating-costs/data-details/), the average economic cost by injury severity or crash in 2021 was as follows:
 
-|                     |            |
+| Type                | Cost       |
 |---------------------|------------|
 | Death:              | $1,778,000 |
 | Disabling Injury:   |   $155,000 |
