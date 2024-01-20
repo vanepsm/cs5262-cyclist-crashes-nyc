@@ -39,4 +39,29 @@ A confusion matrix will be used to evaluate the performance of our model in pred
   - **False Positives (FP):** Accidents incorrectly labeled as injuries instead of fatalities.
   - **False Negatives (FN):** Accidents incorrectly labeled as fatalities instead of injuries.
 
+#### Economic Costs Associated with Injury and Death
+
+This cost breakdown is meant for policymakers in city and state governments in alignment with a goal of reducing the overall cost on society of injuries and deaths in motor vehicle on cyclist accidents.
+
+The average cost of motor-vehicle injuries and fatalities varies based on the severity of the injury and whether the outcome is fatal or non-fatal. According to the [National Safety Council](https://injuryfacts.nsc.org/all-injuries/costs/guide-to-calculating-costs/data-details/), the average economic cost by injury severity or crash in 2021 was as follows:
+
+| Death:              | $1,778,000 |
+| Disabling Injury:   |   $155,000 |
+| Evident Injury:     |    $40,000 |
+| Possible Injury:    |    $24,000 |
+| No Injury Observed: |     $6,700 |
+
+*Since our data doesn't differntiate between disabling and non-disabling injuries, we will use the mean of all possible injuries.*
+
+| Confusion Matrix   | Predicted: Injured (Positive)    | Predicted: Killed (Negative)    |
+|--------------------|----------------------------------|---------------------------------|
+| Actual: Injured    | True Positive (TP) -     $73,000 | False Negative (FN) -   $83,000 |
+| Actual: Killed     | False Positive (FP) - $1,800,000 | True Negative (TN) - $1,778,000 |
+
+- **Interpretation**
+  - **True Positives (TP):** The cost to society of an accurately predicted injury is the average cost of an injury.
+  - **True Negatives (TN):** The cost to society of an accurately predicted fatality is the average cost of that fatality.
+  - **False Positives (FP):** The cost to society of a predicted injury that was actually a fatality is the cost of a fatality plus extra for the inaccuracy of the model. Perhaps of a failed intervention that cost money to implement, but didn't ultimately work.
+  - **False Negatives (FN):** The cost to society of a predicted fatality that was actually an injury is the cost of an injury plus extra for the inaccuracy of the model. Perhaps of an intervention that was not needed.
+
 This matrix will aid in understanding the model's effectiveness in differentiating between injuries and fatalities in cyclist accidents.
