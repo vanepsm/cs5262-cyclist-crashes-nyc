@@ -30,8 +30,8 @@ A confusion matrix will be used to evaluate the performance of our model in pred
 
 | Confusion Matrix   | Predicted: Injured (Positive) | Predicted: Killed (Negative) |
 |--------------------|-------------------------------|------------------------------|
-| Actual: Injured    | True Positive (TP)            | False Negative (FN)          |
-| Actual: Killed     | False Positive (FP)           | True Negative (TN)           |
+| **Actual: Injured**| True Positive (TP)            | False Negative (FN)          |
+| **Actual: Killed** | False Positive (FP)           | True Negative (TN)           |
 
 - **Interpretation:**
   - **True Positives (TP):** Accidents correctly identified as resulting in cyclist injuries.
@@ -57,8 +57,8 @@ The average cost of motor-vehicle injuries and fatalities varies based on the se
 
 | Confusion Matrix   | Predicted: Injured (Positive)    | Predicted: Killed (Negative)    |
 |--------------------|----------------------------------|---------------------------------|
-| Actual: Injured    | True Positive (TP) -     $73,000 | False Negative (FN) -   $83,000 |
-| Actual: Killed     | False Positive (FP) - $1,800,000 | True Negative (TN) - $1,778,000 |
+| **Actual: Injured**| True Positive (TP) -     $73,000 | False Negative (FN) -   $83,000 |
+| **Actual: Killed** | False Positive (FP) - $1,800,000 | True Negative (TN) - $1,778,000 |
 
 - **Interpretation**
   - **True Positives (TP):** The cost to society of an accurately predicted injury is the average cost of an injury.
