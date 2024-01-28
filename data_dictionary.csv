@@ -1,88 +1,88 @@
-Field,Description,Data Type
-collision-id,A unique identifier for the collision record.,numeric
-crash-date,The day (yyyy-mm-dd) of the accident.,date
-crash-time,The time (24 hour) of the accident.,time
-zip code,The ZIP code of the location the accident occurred.,numeric
-latitude,Latitude coordinate of the accident.,floating point
-longitude,Longitude coordinate of the accident.,floating point
-on-street-name,The name of the street the accident took place.,string
-cross-street-name,"If the accident occurred at an intersection, the cross street will appear here.",string
-off-street-name,"If the accident happened on a street, the address of that street will appear in this field.",string
-persons-injured,The total number of people injured in the accident.,uint
-persons-killed,The total number of people killed in the accident.,uint
-pedestrians-injured,The number of pedestrians injured in the accident.,uint
-pedestrians-killed,The number of pedestrians killed in the accident.,uint
-cyclists-injured,The number of cyclists injured in the accident.,uint
-cyclists-killed,The number of cyclists killed in the accident.,uint
-motorists-injured,The number of motorists killed in the accident.,uint
-motorists-killed,The number of motorists killed in the accident.,uint
-contributing-factor-vehicle-1,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string
-contributing-factor-vehicle-2,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string
-contributing-factor-vehicle-3,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string
-vehicle-type-code-1,The type of vehicle involved in the crash.,string
-vehicle-type-code-2,The type of vehicle involved in the crash.,string
-vehicle-type-code-3,The type of vehicle involved in the crash.,string
-cyclist-fatalities,"CALCULATED FIELD.  True if a cyclist was killed, false if a cyclist was injured.",boolean
-,,
-,,
-,,
-,,
-Contributing Factors Enumeration,,
--,,
-NULL,,
-1,,
-80,,
-Accelerator Defective,,
-Aggressive Driving/Road Rage,,
-Alcohol Involvement,,
-Animals Action,,
-Backing Unsafely,,
-Brakes Defective,,
-Cell Phone (hand-held),,
-Cell Phone (hand-Held),,
-Cell Phone (hands-free),,
-Driver Inattention/Distraction,,
-Driver Inexperience,,
-Driverless/Runaway Vehicle,,
-Drugs (illegal),,
-Drugs (Illegal),,
-Eating or Drinking,,
-Failure to Keep Right,,
-Failure to Yield Right-of-Way,,
-Fatigued/Drowsy,,
-Fell Asleep,,
-Following Too Closely,,
-Glare,,
-Headlights Defective,,
-Illnes,,
-Illness,,
-Lane Marking Improper/Inadequate,,
-Listening/Using Headphones,,
-Lost Consciousness,,
-Obstruction/Debris,,
-Other Electronic Device,,
-Other Lighting Defects,,
-Other Vehicular,,
-Outside Car Distraction,,
-Oversized Vehicle,,
-Passenger Distraction,,
-Passing or Lane Usage Improper,,
-Passing Too Closely,,
-Pavement Defective,,
-Pavement Slippery,,
-Pedestrian/Bicyclist/Other Pedestrian Error/Confusion,,
-Physical Disability,,
-Prescription Medication,,
-Reaction to Other Uninvolved Vehicle,,
-Reaction to Uninvolved Vehicle,,
-Shoulders Defective/Improper,,
-Steering Failure,,
-Texting,,
-Tinted Windows,,
-Tire Failure/Inadequate,,
-Tow Hitch Defective,,
-Traffic Control Device Improper/Non-Working,,
-Traffic Control Disregarded,,
-Turning Improperly,,
-Unsafe Lane Changing,,
-Unsafe Speed,,
+Field,Description,Data Type,Missing Data
+collision-id,A unique identifier for the collision record.,numeric,no
+crash-date,The day (yyyy-mm-dd) of the accident.,date,no
+crash-time,The time (24 hour) of the accident.,time,no
+zip code,The ZIP code of the location the accident occurred.,numeric,no
+latitude,Latitude coordinate of the accident.,floating point,yes
+longitude,Longitude coordinate of the accident.,floating point,yes
+on-street-name,The name of the street the accident took place.,string,yes
+cross-street-name,"If the accident occurred at an intersection, the cross street will appear here.",string,yes
+off-street-name,"If the accident happened on a street, the address of that street will appear in this field.",string,yes
+persons-injured,The total number of people injured in the accident.,uint,no
+persons-killed,The total number of people killed in the accident.,uint,no
+pedestrians-injured,The number of pedestrians injured in the accident.,uint,no
+pedestrians-killed,The number of pedestrians killed in the accident.,uint,no
+cyclists-injured,The number of cyclists injured in the accident.,uint,no
+cyclists-killed,The number of cyclists killed in the accident.,uint,no
+motorists-injured,The number of motorists killed in the accident.,uint,no
+motorists-killed,The number of motorists killed in the accident.,uint,no
+contributing-factor-vehicle-1,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string,no
+contributing-factor-vehicle-2,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string,no
+contributing-factor-vehicle-3,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string,no
+vehicle-type-code-1,The type of vehicle involved in the crash.,string,no
+vehicle-type-code-2,The type of vehicle involved in the crash.,string,no
+vehicle-type-code-3,The type of vehicle involved in the crash.,string,no
+cyclist-fatalities,"CALCULATED FIELD.  True if a cyclist was killed, false if a cyclist was injured.",boolean,no
+,,,
+,,,
+,,,
+,,,
+Contributing Factors Enumeration,,,
+-,,,
+NULL,,,
+1,,,
+80,,,
+Accelerator Defective,,,
+Aggressive Driving/Road Rage,,,
+Alcohol Involvement,,,
+Animals Action,,,
+Backing Unsafely,,,
+Brakes Defective,,,
+Cell Phone (hand-held),,,
+Cell Phone (hand-Held),,,
+Cell Phone (hands-free),,,
+Driver Inattention/Distraction,,,
+Driver Inexperience,,,
+Driverless/Runaway Vehicle,,,
+Drugs (illegal),,,
+Drugs (Illegal),,,
+Eating or Drinking,,,
+Failure to Keep Right,,,
+Failure to Yield Right-of-Way,,,
+Fatigued/Drowsy,,,
+Fell Asleep,,,
+Following Too Closely,,,
+Glare,,,
+Headlights Defective,,,
+Illnes,,,
+Illness,,,
+Lane Marking Improper/Inadequate,,,
+Listening/Using Headphones,,,
+Lost Consciousness,,,
+Obstruction/Debris,,,
+Other Electronic Device,,,
+Other Lighting Defects,,,
+Other Vehicular,,,
+Outside Car Distraction,,,
+Oversized Vehicle,,,
+Passenger Distraction,,,
+Passing or Lane Usage Improper,,,
+Passing Too Closely,,,
+Pavement Defective,,,
+Pavement Slippery,,,
+Pedestrian/Bicyclist/Other Pedestrian Error/Confusion,,,
+Physical Disability,,,
+Prescription Medication,,,
+Reaction to Other Uninvolved Vehicle,,,
+Reaction to Uninvolved Vehicle,,,
+Shoulders Defective/Improper,,,
+Steering Failure,,,
+Texting,,,
+Tinted Windows,,,
+Tire Failure/Inadequate,,,
+Tow Hitch Defective,,,
+Traffic Control Device Improper/Non-Working,,,
+Traffic Control Disregarded,,,
+Turning Improperly,,,
+Unsafe Lane Changing,,,
+Unsafe Speed,,,
