@@ -15,12 +15,15 @@ The core of our analysis revolves around binary classification, distinguishing b
 - **Precision and Recall:** Precision measures the accuracy of predictions in identifying fatalities, while recall assesses how well the model identifies all actual fatalities.
 
 #### Data
-We utilize data from the New York City vehicle collisions dataset, focusing on cyclist accidents.
+We utilize data from the New York City vehicle collisions dataset, focusing on cyclist accidents.  These data were collected starting 2016 and continue through present.
 
 Dataset Source: [NYC Vehicle Collisions Dataset](https://catalog.data.gov/dataset/motor-vehicle-collisions-crashes)
 
 Processed Subset: [Cyclist Accidents Subset](https://drive.google.com/file/d/1CFaRXe3Y6PWHpYOoGD7qih6-1oWzUi0e/view)
 
+The processed subset data contains about 40,000 rows with 23 columns.
+
+[comment]: <> (Your project overview effectively highlights the importance of analyzing cyclist accidents in New York City. The focus on binary metrics, such as injury rate and fatality rate, along with the dataset you use show a strategic approach. For added context, consider briefly mentioning the dataset size or timeframe, but overall a strong foundation!) 
 
 ## Confusion Matrix: Interpreting Positive and Negative Results
 A confusion matrix will be used to evaluate the performance of our model in predicting injuries versus fatalities.
@@ -66,4 +69,6 @@ The average cost of motor-vehicle injuries and fatalities varies based on the se
   - **False Positives (FP):** The cost to society of a predicted injury that was actually a fatality is the cost of a fatality plus extra for the inaccuracy of the model. Perhaps of a failed intervention that cost money to implement, but didn't ultimately work.
   - **False Negatives (FN):** The cost to society of a predicted fatality that was actually an injury is the cost of an injury plus extra for the inaccuracy of the model. Perhaps of an intervention that was not needed.
 
-This matrix will aid in understanding the model's effectiveness in differentiating between injuries and fatalities in cyclist accidents.
+This matrix will aid in understanding the model's effectiveness in differentiating between injuries and fatalities in cyclist accidents, however cost associated with injury will vary, and the dataset doesn't include the severity of injury.  Only the occurrence. 
+
+[comment]: <> (Your confusion matrix provides a clear and structured approach to evaluating model performance, offering insight into its effectiveness in predicting injuries and fatalities. The economic cost breakdown bridges the theoretical model outcomes to real-world implications. Adding a brief insight into any challenges encountered in accurately extracting injury data from the dataset would enhance the technical understanding.)
