@@ -1,24 +1,25 @@
-Field,Description
-collision-id,A unique identifier for the collision record.
-crash-date,The day (yyyy-mm-dd) of the accident.
-crash-time,The time (24 hour) of the accident.
-zip code,The ZIP code of the location the accident occurred.
-latitude,Latitude coordinate of the accident.
-longitude,Longitude coordinate of the accident.
-on-street-name,The name of the street the accident took place.
-cross-street-name,"If the accident occurred at an intersection, the cross street will appear here."
-off-street-name,"If the accident happened on a street, the address of that street will appear in this field."
-persons-injured,The total number of people injured in the accident.
-persons-killed,The total number of people killed in the accident.
-pedestrians-injured,The number of pedestrians injured in the accident.
-pedestrians-killed,The number of pedestrians killed in the accident.
-cyclists-injured,The number of cyclists injured in the accident.
-cyclists-killed,The number of cyclists killed in the accident.
-motorists-injured,The number of motorists killed in the accident.
-motorists-killed,The number of motorists killed in the accident.
-contributing-factor-vehicle-1,Contributing factor description for the vehicle involved in the crash. (See Enumerations)
-contributing-factor-vehicle-2,Contributing factor description for the vehicle involved in the crash. (See Enumerations)
-contributing-factor-vehicle-3,Contributing factor description for the vehicle involved in the crash. (See Enumerations)
-vehicle-type-code-1,The type of vehicle involved in the crash.
-vehicle-type-code-2,The type of vehicle involved in the crash.
-vehicle-type-code-3,The type of vehicle involved in the crash.
+Field,Description,Data Type
+collision-id,A unique identifier for the collision record.,numeric
+crash-date,The day (yyyy-mm-dd) of the accident.,date
+crash-time,The time (24 hour) of the accident.,time
+zip code,The ZIP code of the location the accident occurred.,numeric
+latitude,Latitude coordinate of the accident.,floating point
+longitude,Longitude coordinate of the accident.,floating point
+on-street-name,The name of the street the accident took place.,string
+cross-street-name,"If the accident occurred at an intersection, the cross street will appear here.",string
+off-street-name,"If the accident happened on a street, the address of that street will appear in this field.",string
+persons-injured,The total number of people injured in the accident.,uint
+persons-killed,The total number of people killed in the accident.,uint
+pedestrians-injured,The number of pedestrians injured in the accident.,uint
+pedestrians-killed,The number of pedestrians killed in the accident.,uint
+cyclists-injured,The number of cyclists injured in the accident.,uint
+cyclists-killed,The number of cyclists killed in the accident.,uint
+motorists-injured,The number of motorists killed in the accident.,uint
+motorists-killed,The number of motorists killed in the accident.,uint
+contributing-factor-vehicle-1,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string
+contributing-factor-vehicle-2,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string
+contributing-factor-vehicle-3,Contributing factor description for the vehicle involved in the crash. (See Enumerations),string
+vehicle-type-code-1,The type of vehicle involved in the crash.,string
+vehicle-type-code-2,The type of vehicle involved in the crash.,string
+vehicle-type-code-3,The type of vehicle involved in the crash.,string
+cyclist-fatalities,"CALCULATED FIELD.  True if a cyclist was killed, false if a cyclist was injured.",boolean
